@@ -60,6 +60,6 @@ IT4045c group project for spring boot/microservices
 
 
 #   ScrumRole:
-Johannemann ScrumRole Leader
-Ian user interface Dev
-Raeshawn Database Dev 
+* Johannemann ScrumRole Leader
+* Ian user interface Dev
+* Raeshawn Database Dev 

@@ -45,7 +45,7 @@ IT4045c group project for spring boot/microservices
 
 
 
-# Product Backlog:
+# JSON Schema:
 
 
 

@@ -25,6 +25,7 @@ IT4045c group project for spring boot/microservices
 # Class Diagram:
 
 
+![image](https://user-images.githubusercontent.com/18122120/169656783-695c16d8-b312-4aec-97ba-352742aa8e91.png)
 
 
 

@@ -9,7 +9,7 @@ IT4045c group project for spring boot/microservices
 
 
 # StoryBoard:
-
+https://trello.com/invite/b/seBh3Rni/3d1d0a0ef9b14d943c1b0b03afb38264/sports-service-board
 
 
 # Functional Requirments:
@@ -87,10 +87,13 @@ Stats are in English
 
 
 
-# Class Diagram Discription:
+# Class Diagram Description:
 
-
-
+getTeamName()
+getSport()
+getTotalWins()
+getTotalLosses()
+getNextGame()
 
 
 
@@ -99,7 +102,13 @@ Stats are in English
 
 
 # JSON Schema:
-
+{
+    "Sport" : "MLB",
+    "TeamName" : "Cincinnati Reds",
+    "Wins" : "1",
+    "Losses" : "100",
+    "NextGame" : "5/31/2022"
+}
 
 
 
@@ -111,6 +120,7 @@ Stats are in English
 
 
 #   ScrumRole:
-* Johannemann ScrumRole Leader
+* Johannemann ScrumRole Leader/Dev
 * Ian user interface Dev
 * Raeshawn Database Dev 
+* Eric Dev

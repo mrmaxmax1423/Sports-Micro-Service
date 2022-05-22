@@ -2,10 +2,17 @@
 IT4045c group project for spring boot/microservices
 
 # Introduction
-* Making a sports project that allows you to see who wins and who loses and the next upcoming game for that sport. For the sports, we would include MLB, NFL and Soccer into our project. We would make one data base to contain the information regarding the wins and loses and the next upcoming game for that sport.
+* Making a sports project that allows you to see who wins and who loses and the next upcoming game for that sport. For the sports, we would include MLB, NFL and Soccer into our project. We would make one database to contain the information regarding the wins and loses and the next upcoming game for that sport.
 
 
+# Stand up:
+**Note:** *Subject to change day/time*  
+Tuesdays at 3pm
 
+# Milestones:
+1st - Stand up a basic UI and database  
+2nd - Create class models with a stub and add entries to database.  
+3rd - Connect the front end to the back end.
 
 
 # StoryBoard:

@@ -7,7 +7,8 @@ IT4045c group project for spring boot/microservices
 
 # Stand up:
 **Note:** *Subject to change day/time*  
-Tuesdays at 3pm
+Tuesdays at 3pm  
+https://tinyurl.com/3446bp3e
 
 # Milestones:
 1st - Stand up a basic UI and database  

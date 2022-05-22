@@ -18,6 +18,7 @@ https://tinyurl.com/3446bp3e
 
 # StoryBoard:
 https://projects.invisionapp.com/prototype/cl3hs2tie00nb2n01dt6eeckl/play
+
 https://trello.com/invite/b/seBh3Rni/3d1d0a0ef9b14d943c1b0b03afb38264/sports-service-board
 
 
@@ -133,3 +134,6 @@ getNextGame()
 * Ian user interface Dev
 * Raeshawn Database Dev 
 * Eric Dev
+
+#     Weekly Meeting
+We will meet every Tuesday at 3pm over microsoft teams

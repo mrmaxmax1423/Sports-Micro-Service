@@ -109,12 +109,12 @@ getNextGame()
 
 
 # JSON Schema:
-{
-    "Sport" : "MLB",
-    "TeamName" : "Cincinnati Reds",
-    "Wins" : "1",
-    "Losses" : "100",
-    "NextGame" : "5/31/2022"
+{  
+    "Sport" : "MLB",  
+    "TeamName" : "Cincinnati Reds",  
+    "Wins" : "1",  
+    "Losses" : "100",  
+    "NextGame" : "5/31/2022"  
 }
 
 

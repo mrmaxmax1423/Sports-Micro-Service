@@ -23,7 +23,7 @@ Stats are in English
 ### Examples
 ### 1.1
 ### Given: 
-      The three buttons for each sport are presented to you. The "MLB" button, the "NFL" ubtton, and the "MLB" button
+      The three buttons for each sport are presented to you. The "MLB" button, the "NFL" button, and the "MLS" button
 ### When:
       I tap on the button of the sport I want to look at
 ### Then:

@@ -1,12 +1,10 @@
-package App.Model;
+package app.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
@@ -15,8 +13,8 @@ public class MLB {
 
     private String sport;
     private String team;
-    private String wins;
-    private String losses;
-    private String nextGame;
+    private Integer wins;
+    private Integer losses;
+    private LocalDate nextGame;
 
 }

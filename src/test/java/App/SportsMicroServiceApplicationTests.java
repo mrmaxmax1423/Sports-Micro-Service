@@ -1,4 +1,4 @@
-package com.IT4045c.SportsService.Sports.MicroService;
+package App;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

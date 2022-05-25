@@ -1,4 +1,4 @@
-package com.IT4045c.SportsService.Sports.MicroService.Model;
+package App.Model;
 
 import lombok.Data;
 

@@ -1,10 +1,9 @@
-package com.IT4045c.SportsService.Sports.MicroService.Model;
+package App.Model;
 
 import lombok.Data;
 
 @Data
-public class MLB {
-
+public class NFL {
     private String sport;
     private String team;
     private String wins;

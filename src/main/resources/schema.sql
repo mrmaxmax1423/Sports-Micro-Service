@@ -19,3 +19,13 @@ CREATE TABLE MLB (
     losses varchar(3) NOT NULL,
     nextGame varchar(10) NOT NULL
 );
+
+DROP TABLE if exists NFL;
+
+CREATE TABLE NFL (
+                     sport varchar(50) not null ,
+                     team varchar(75) NOT NULL ,
+                     wins varchar(3) NOT NULL,
+                     losses varchar(3) NOT NULL,
+                     nextGame varchar(10) NOT NULL
+);

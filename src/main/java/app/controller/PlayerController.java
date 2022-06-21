@@ -28,9 +28,9 @@ public class PlayerController {
     }
 
     @PostMapping("/savePlayer")
-    public Player savePlayer(@RequestBody Player player) {
-
-        return playerService.savePlayer(player);
+    public String savePlayer(@RequestBody Player player) {
+        playerService.savePlayer(player);
+        return "index";
     }
 
     @GetMapping("/getPlayer/{playerLastName}/")

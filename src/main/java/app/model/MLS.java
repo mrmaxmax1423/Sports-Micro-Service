@@ -7,6 +7,7 @@ public class MLS {
     private String sport;
     private String team;
     private String wins;
+    private String ties;
     private String losses;
     private String nextGame;
 }

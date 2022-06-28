@@ -8,6 +8,11 @@ class SportsMicroServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
+
+
 }
+
+

@@ -29,3 +29,14 @@ CREATE TABLE NFL (
                      losses varchar(3) NOT NULL,
                      nextGame varchar(10) NOT NULL
 );
+
+CREATE TABLE MLS (
+                     sport varchar(50) not null ,
+                     team varchar(75) NOT NULL ,
+                     wins varchar(3) NOT NULL,
+                     ties varchar(3) NOT NULL,
+                     losses varchar(3) NOT NULL,
+                     nextGame varchar(10) NOT NULL
+);
+
+

@@ -29,8 +29,8 @@ public class PlayerService {
         return savedPlayer;
     }
 
-    BigDecimal calculateWinPercentage(Integer wins, Integer losses) {
+  /**  BigDecimal calculateWinPercentage(Integer wins, Integer losses) {
 
-        return null;
-    }
+    }*/
+
 }

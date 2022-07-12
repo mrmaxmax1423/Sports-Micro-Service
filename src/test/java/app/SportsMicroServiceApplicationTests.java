@@ -1,11 +1,18 @@
 package app;
 
+import app.model.Player;
+import app.service.IPlayerService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.stereotype.Component;
 
 @SpringBootTest
 class SportsMicroServiceApplicationTests {
 
+	@Autowired
+	IPlayerService playerService;
+	private Player player;
 	@Test
 	void contextLoads() {
 	}

@@ -5,6 +5,7 @@ INSERT INTO PLAYER (id,firstName, lastName, hometown, dob, teamPlayingFor, sport
 (4,'Katie', 'Johannemann', 'Union, KY', '10-03-1983', 'Cincinnati Reds', 'baseball'),
 (5,'Chase','Young','Upper Marlboro,Maryland','04-14-1999','Washington','Football'),
 (6,'Brenner','Forward','Cuiabá Brazil','01-16-2000','fc cincinnati','Soccer');
+
 Insert into MLB (sport, team, wins, losses, nextGame) values
 ('Baseball', 'Cincinnati Reds', '8', '25', '05-25-2022'),
 ('Baseball', 'Cincinnati Reds', '8', '25', '05-26-2022');
@@ -14,6 +15,8 @@ Insert into NFL (sport, team, wins, losses, nextGame) values
 ('Football', 'Washington', '8', '25', '05-26-2022');
 
 Insert into MLS (sport, team, wins, losses, nextGame) values
-('Soccer','fc cincinnati','7','7','07-17-2022');
+('Soccer','fc cincinnati','7','7','07-17-2022'),
+('Soccer','fc cincinnati','7','7','07-23-2022')
+;
 
 

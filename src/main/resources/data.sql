@@ -12,3 +12,6 @@ Insert into MLB (sport, team, wins, losses, nextGame) values
 Insert into NFL (sport, team, wins, losses, nextGame) values
 ('Football', 'Cincinnati Bengals', '8', '25', '05-25-2022'),
 ('Football', 'Washington', '8', '25', '05-26-2022');
+
+Insert into MLS (sport, team, wins, losses, nextGame) values
+

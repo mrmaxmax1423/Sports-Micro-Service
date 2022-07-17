@@ -14,4 +14,6 @@ Insert into NFL (sport, team, wins, losses, nextGame) values
 ('Football', 'Washington', '8', '25', '05-26-2022');
 
 Insert into MLS (sport, team, wins, losses, nextGame) values
+('Soccer','fc cincinnati','7','7','07-17-2022');
+
 

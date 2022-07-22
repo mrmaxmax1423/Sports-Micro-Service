@@ -39,5 +39,10 @@
         </div>
     </nav>
   <p>NFL...</p>
+    <div class="list-group" th:each="player : ${player}">
+        <a href="#" class="list-group-item list-group-item-action">
+            <p th:text="${player}"/>
+        </a>
+    </div>
 </body>
 </html>

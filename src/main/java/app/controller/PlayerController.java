@@ -2,34 +2,63 @@ package app.controller;
 
 import app.model.Player;
 import app.service.PlayerService;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Collection;
+import java.util.List;
 
-@RestController
-@RequiredArgsConstructor
+
+@Controller
 public class PlayerController {
 
-    private final PlayerService playerService;
+    @Autowired
+    PlayerService playerService;
 
-    @GetMapping("/getAllPlayers")
-    public Collection<Player> getAll() {
-        return playerService.getAllPlayers();
+    @RequestMapping("/")
+    public String index(Model model){
+        Player player = new Player()
+            .setFirstName("Chris")
+            .setLastName("Johannemann")
+            .setHometown("Union, KY")
+            .setSport("Curling")
+            .setTeamPlayingFor("USA");
+        model.addAttribute(player);
+        return "index";
     }
 
-    @PostMapping("/savePlayer")
-    public Player savePlayer(@RequestBody Player player) {
-
-        return playerService.savePlayer(player);
+    @GetMapping("/player")
+    @ResponseBody
+    public List<Player> fetchAllPlayers(){
+        return playerService.fetchAllPlayers();
     }
-//
-//    @GetMapping("/getPlayer/{playerLastName}")
-//    public List<Player> getPlayerByLastName(@PathVariable String inPlayerName){
-//        return repository.findPlayerByLastName(inPlayerName);
-//    }
 
+    @RequestMapping("/savePlayer")
+    public String savePlayer(Player player) {
+        try {
+            playerService.savePlayer(player);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "index";
+    }
+
+    @PostMapping(value = "/player", consumes = "application/json", produces = "application/json")
+    public Player createPlayer(@RequestBody Player player) {
+        Player newPlayer = null;
+        try {
+            playerService.savePlayer(player);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return newPlayer;
+    }
 }

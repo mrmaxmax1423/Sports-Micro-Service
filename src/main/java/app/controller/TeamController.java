@@ -1,6 +1,5 @@
 package app.controller;
 
-import app.model.Player;
 import app.model.Team;
 import app.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -25,13 +25,4 @@ public class TeamDAO implements ITeamDAO {
         return null;
     }
 
-    @Override
-    public void deleted(Team team) {
-
-    }
-
-    @Override
-    public List<Team> fetchTeamsById(int teamId) {
-        return null;
-    }
 }

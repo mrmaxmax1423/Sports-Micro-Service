@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class TeamService implements ITeamService{
+public class TeamService{
 
     @Autowired
     private ITeamDAO teamDAO;
@@ -17,9 +17,6 @@ public class TeamService implements ITeamService{
 
     public TeamService(ITeamDAO teamRepositoryDAO) {this.teamDAO = teamRepositoryDAO; }
 
-
-    @Override
-    public List<Team> fetchAllTeams() {
-        return teamDAO.fetchAllTeams();
+    public List<Team> fetchAllTeams() { return null;
     }
 }

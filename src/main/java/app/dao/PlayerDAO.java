@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class PlayerDAO implements IPlayerRepositoryDAO {
+public class PlayerDAO implements IPlayerDAO {
 
     List<Player> playerCollection = new ArrayList<>();
 

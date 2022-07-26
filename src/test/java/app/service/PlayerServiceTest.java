@@ -1,6 +1,6 @@
 package app.service;
 
-import app.dao.IPlayerRepositoryDAO;
+import app.dao.IPlayerDAO;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -16,7 +16,7 @@ public class PlayerServiceTest {
     @InjectMocks
     private PlayerService playerService;
     @Mock
-    private IPlayerRepositoryDAO playerRepository;
+    private IPlayerDAO playerRepository;
 
 //    @Test
 //    public void test__getAllPlayers() {

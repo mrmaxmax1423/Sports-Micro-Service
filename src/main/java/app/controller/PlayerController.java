@@ -1,6 +1,7 @@
 package app.controller;
 
 import app.model.Player;
+import app.model.Team;
 import app.service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,9 +12,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.Collection;
 import java.util.List;
 
 
@@ -61,4 +62,11 @@ public class PlayerController {
         }
         return newPlayer;
     }
+
+    @GetMapping("/players")
+    public ResponseEntity searchPlayers(@RequestParam(value = "searchTerm", required = false, defaultValue = "None") String searchTerm){
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+
 }

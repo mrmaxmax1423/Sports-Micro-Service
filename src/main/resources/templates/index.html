@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Sports Playerssss</title>
+    <title>Up-To-Date Sports</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -12,38 +12,52 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sport News</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Teams</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="player.html">Players</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-secondary" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
+    <div th:replace="fragments/topnav :: navbar">
 
-    <p>Welcome to Sports News. Get the most up-to-date scores and stats of your favorite teams.</p>
-    <p th:text="${player}" />
+    </div>
+            <br>
+
+<p>Welcome to Sports News. Get the most up-to-date scores and stats of your favorite teams.</p>
+<br>
+<p th:text="${player}" />
 
 <form action="#" th:action="@{/savePlayer}" th:object="${player}" method="GET">
-    <label>First Name</label><input type="text" name="firstname" th:field="*{firstName}"/> <br>
-    <label>Last Name</label><input type="text" name="lastname" th:field="*{lastName}"/><br>
-    <label>Hometown</label><input type="text" name="hometown" th:field="*{hometown}"/><br>
-    <label>Team Name</label><input type="text" name="teamPlayingFor" th:field="*{teamPlayingFor}"/><br>
-    <label>Sport</label><input type="text" name="sport" th:field="*{sport}"/><br>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+        <span class="input-group-text" id="firstName">First Name</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="firstname" th:field="*{firstName}"/>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="lastName">Last Name</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="lastname" th:field="*{lastName}"/>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="hometown">Hometown</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="hometown" th:field="*{hometown}"/>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="teamPlayingFor">Team Name</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="teamPlayingFor" th:field="*{teamPlayingFor}"/>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="sport">Sport</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="sport" th:field="*{sport}"/>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="id">ID</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="id" th:field="*{id}"/>
+    </div>
     <button name="submit" type="submit" value="0">Submit</button>
 </form>
 

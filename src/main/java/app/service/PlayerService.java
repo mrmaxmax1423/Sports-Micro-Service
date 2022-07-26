@@ -1,9 +1,8 @@
 package app.service;
 
-import app.dao.IPlayerRepositoryDAO;
+import app.dao.IPlayerDAO;
 import app.model.Player;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,11 +12,11 @@ import java.util.List;
 public class PlayerService implements IPlayerService{
 
     @Autowired
-    private IPlayerRepositoryDAO playerDAO;
+    private IPlayerDAO playerDAO;
 
     public PlayerService(){}
 
-    public PlayerService(IPlayerRepositoryDAO playerRepository){
+    public PlayerService(IPlayerDAO playerRepository){
         this.playerDAO = playerRepository;
     }
 

@@ -30,9 +30,9 @@ CREATE TABLE NFL (
                      nextGame varchar(10) NOT NULL
 );
 
-DROP TABLE if exists Soccer;
+DROP TABLE if exists MLS;
 
-CREATE TABLE Soccer (
+CREATE TABLE MLS (
                      sport varchar(50) not null ,
                      team varchar(75) NOT NULL ,
                      wins varchar(3) NOT NULL,

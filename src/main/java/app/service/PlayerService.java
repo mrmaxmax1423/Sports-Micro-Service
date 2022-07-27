@@ -1,36 +1,43 @@
 package app.service;
 
-import app.dao.PlayerRepository;
+import app.dao.IPlayerDAO;
 import app.model.Player;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
-import java.util.Collection;
+import java.util.List;
 
-@Slf4j
+
 @Service
-@RequiredArgsConstructor
-public class PlayerService {
+public class PlayerService implements IPlayerService{
 
-    private final PlayerRepository playerRepository;
+    @Autowired
+    private IPlayerDAO playerDAO;
 
-    public Collection<Player> getAllPlayers() {
+    public PlayerService(){}
 
-        return playerRepository.findAll();
+    public PlayerService(IPlayerDAO playerRepository){
+        this.playerDAO = playerRepository;
     }
 
-    public Player savePlayer(Player player) {
-        var savedPlayer = playerRepository.save(player);
-
-        log.debug(savedPlayer.getFirstName() + " " + savedPlayer.getLastName() + " was added to the " + savedPlayer.getTeamPlayingFor() + " lineup");
-        // Code here to transform savedPlayer to API version
-        return savedPlayer;
+    @Override
+    public Player fetchById(int id) {
+        Player foundPlayer = playerDAO.fetchById(id);
+        return foundPlayer;
     }
 
-  /**  BigDecimal calculateWinPercentage(Integer wins, Integer losses) {
+    @Override
+    public List<Player> fetchAllPlayers() {
+        return playerDAO.fetchAllPlayers();
+    }
 
-    }*/
-
+    @Override
+    public Player savePlayer(Player player)  {
+        try {
+            playerDAO.savePlayer(player);
+        } catch (Exception e) {
+            //ToDO Add logging later..
+        }
+        return player;
+    }
 }

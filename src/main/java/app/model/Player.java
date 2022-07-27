@@ -15,15 +15,12 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-@Entity
 public class Player {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+
+    private int id;
     private String firstName;
     private String lastName;
     private String hometown;
-    private String dob;
     private String teamPlayingFor;
     private String sport;
 

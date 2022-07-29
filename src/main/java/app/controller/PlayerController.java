@@ -36,6 +36,18 @@ public class PlayerController {
         return "index";
     }
 
+    @RequestMapping("//")
+    public String player(Model model){
+        Player player = new Player()
+                .setFirstName("Chris")
+                .setLastName("Johannemann")
+                .setHometown("Union, KY")
+                .setSport("Curling")
+                .setTeamPlayingFor("USA");
+        model.addAttribute(player);
+        return "player";
+    }
+
     @GetMapping("/player")
     @ResponseBody
     public List<Player> fetchAllPlayers(){
